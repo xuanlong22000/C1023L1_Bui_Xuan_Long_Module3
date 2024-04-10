@@ -34,8 +34,14 @@ create table Phieu_nhap(
 create table NhaCC(
 	MaNCC int primary key,
 	TenNCC varchar(255),
-    DiaChi varchar(255),
-    SDT int
+    DiaChi varchar(255)
+);
+
+create table SDT(
+	Id int primary key,
+    MaNCC int,
+	phone int,
+    FOREIGN KEY (MaNCC) REFERENCES NhaCC(MaNCC)
 );
 
 create table DonDH(
