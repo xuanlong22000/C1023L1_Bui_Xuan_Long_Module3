@@ -1,3 +1,5 @@
+drop database Product_demo;
+
 CREATE DATABASE IF NOT EXISTS Product_demo;
 use Product_demo;
 
