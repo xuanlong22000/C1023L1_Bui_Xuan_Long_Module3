@@ -1,4 +1,4 @@
-SELECT kh.id AS ma_khach_hang, kh.ho_ten, lk.ten_loai AS ten_loai_khach, hd.id AS ma_hop_dong, dv.ten_dich_vu, hd.ngay_lam_hop_dong, hd.ngay_ket_thuc,
+SELECT kh.id AS id_khach_hang, kh.ho_ten, lk.ten_loai AS ten_loai_khach, hd.id AS ma_hop_dong, dv.ten_dich_vu, hd.ngay_lam_hop_dong, hd.ngay_ket_thuc,
     (dv.chi_phi_thue + hdct.so_luong * dvdk.gia) AS tong_tien
 FROM khach_hang kh
 LEFT JOIN loai_khach lk ON kh.id_loai_khach = lk.id
