@@ -1,0 +1,47 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    padding: 30px;
+    background-color: antiquewhite;
+    margin-bottom: 10px;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: antiquewhite;
+    
+}
+
+nav a{
+    text-decoration: none;
+    font-size: 20px;
+    padding-right: 18px;
+    border-right: 1px solid black;
+}
+
+nav a:last-child{
+    border-right: none;
+}
+
+.body{
+    display: flex;
+    gap: 50px;
+    margin-top: 20px;
+}
+
+.body .sidebar{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    min-width: 600px
+}
+
+.body .content p{
+    margin-top: 19px;
+}
