@@ -94,9 +94,6 @@ public class ProductServlet extends HttpServlet {
             default:
                 break;
         }
-
-
-
     }
 
 }
